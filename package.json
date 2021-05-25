@@ -1,0 +1,13 @@
+{
+  "name": "websocket-intro-lesson",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "mongoose": "^5.12.10",
+    "ws": "^7.4.5"
+  }
+}
