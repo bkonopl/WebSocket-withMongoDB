@@ -1,40 +1,26 @@
-body {
-    background-color: black;
-    color: #0F0;
-    font-family: 'Consolas', monospace;
+#header {
+    text-align:center;
+    text-justify: center;
 }
-
-header {
-    text-align: center;
+#pass{
+    display: grid;
+    grid-template-areas:
+    "foto text";
+    grid-template-columns: 2fr 3fr;
+    background: hotpink;
 }
-
-#messages {
-    margin-left: 1em;
-    list-style: none;
+#img {
+   grid-area: foto;
 }
-
-#form {
+.content {
+    grid-area: text;
+    justify-content: center;
+}
+.text {
     display: flex;
+    font-size: 22px;
 }
 
-input, label {
-    display: block;
-}
-
-input {
-    outline: none;
-    border: none;
-    background-color: black;
-    color: #0F0;
-    padding: 1em .5em;
-    display: block;
-    font-size: 1.5em;
-    font-family: 'Consolas', monospace;
-    flex: 1;
-}
-
-label {
-    display: block;
-    padding: 1em .5em;
-    font-size: 1.5em;
+.description {
+    margin-right: 15px;
 }

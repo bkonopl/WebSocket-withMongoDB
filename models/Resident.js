@@ -1,8 +1,38 @@
 const {Schema, model} = require('mongoose')
 
 const ReseidentScheme = new Schema({
-    name: String,
-    msg: String,
+    firstName: {
+        type: String,
+        required: true
+    },
+    secondName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    room: {
+        type: String,
+        required: true
+    },
+    img: {
+        type: String,
+        required: true
+    },
+    faculty: {
+        type: String,
+        required: true
+    },
+    group: {
+      type: String,
+      required: true
+    },
+    date: {
+        type: String,
+        required: true
+    }
 })
 
-const Resident = model('Resident', ReseidentScheme)
+module.exports =  model('Resident', ReseidentScheme)

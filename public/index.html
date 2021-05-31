@@ -1,27 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
-        <title>WebSocket</title>
-        <link rel="stylesheet" href="app.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+    <title>WebSocket</title>
+    <link rel="stylesheet" href="app.css">
+</head>
 
-    <body>
-        <header>
-            <h1>Добро пожаловать. Снова.</h1>
-            <span id="status">OFFLINE</span>
-        </header>
+<body>
+<header>
+    <h1>Добро пожаловать. Снова.</h1>
+    <span id="status">OFFLINE</span>
+</header>
 
-        <main>
-            <ul id="messages"></ul>
+<main>
+    <ul id="messages"></ul>
+    <form id="form">
+        <label for="message">&gt;</label>
+        <input type="text" id="input" required autofocus autocomplete="off">
+    </form>
+    <div id="pass">
+        <img id="foto" src="https://i.gifer.com/origin/56/562c0b23768e898a801985692a7f6c74.gif">
+        <div class="content">
+            <div class="text">
+                <p class="description">Фамилия:</p>
+                <p id="firstName">Bogdan</p>
+            </div>
+            <div class="text">
+                <p class="description">Имя:</p>
+                <p id="secondName">Bogdan</p>
+            </div>
+            <div class="text">
+                <p id="description">Отчество:</p>
+                <p id="lastName">Bogdan</p>
+            </div>
+            <div class="text">
+                <p id="description">Факультет:</p>
+                <p id="faculty">Bogdan</p>
+            </div>
+            <div class="text">
+                <p id="description">Группа:</p>
+                <p id="group">Bogdan</p>
+            </div>
+            <div class="text">
+                <p id="description">Действителен до:</p>
+                <p id="date">Bogdan</p>
+            </div>
+        </div>
+    </div>
+</main>
 
-            <form id="form">
-                <label for="message">&gt;</label>
-                <input type="text" id="input" required autofocus autocomplete="off">
-            </form>
-        </main>
-
-        <script src="app.js"></script>
-    </body>
+<script src="app.js"></script>
+</body>
 </html>
