@@ -30,10 +30,6 @@ function setStatus(value) {
 }
 
 function printMessage(data) {
-    console.log('start')
-    console.log(data)
-    console.log('end')
-
     fotoId.innerHTML = `<img src="${data.img}"/>`
 
     firstNameId.innerHTML = data.firstName
@@ -43,24 +39,6 @@ function printMessage(data) {
     facultyId.innerHTML = data.faculty
     groupId.innerHTML = data.group
     dateId.innerHTML = data.date
-
-    console.log(data.firstName)
-    console.log(data.secondName)
-    console.log(data.lastName)
-
-    console.log(data.room)
-    console.log(data.img)
-
-    console.log(data.faculty)
-    console.log(data.group)
-    console.log(data.date)
-
-    console.log('end')
-
-    /*
-    const li = document.createElement('li');
-    li.innerHTML = value;
-    */
 }
 
 form.addEventListener('submit', event => {
