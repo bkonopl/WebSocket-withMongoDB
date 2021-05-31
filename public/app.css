@@ -9,7 +9,7 @@
     grid-template-columns: 2fr 3fr;
     background: hotpink;
 }
-#img {
+#foto {
    grid-area: foto;
 }
 .content {
