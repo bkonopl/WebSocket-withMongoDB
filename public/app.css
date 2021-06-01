@@ -1,19 +1,47 @@
+body {
+    background-color: #EEE;
+    background-image: url(https://cs7.pikabu.ru/post_img/big/2014/07/03/0/1404332732_1301108742.jpg);
+    background-size: 100%;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+.spanStatus {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
 #header {
     text-align:center;
     text-justify: center;
 }
-#pass{
+.pass{
+    border: 10px;
+    border-color: blue;
     display: grid;
     grid-template-areas:
     "foto text";
     grid-template-columns: 2fr 3fr;
-    background: hotpink;
+    background: deeppink;
+    margin: auto;
+    grid-gap: 20px;
+    width: max-content;
+}
+img {
+
+    width: 320px;
+    height: 350px;
 }
 #foto {
-   grid-area: foto;
+    grid-area: foto;
+    margin: auto;
+    padding: 5px;
 }
 .content {
     grid-area: text;
+    width: max-content;
+    align-items: space-between;
     justify-content: center;
 }
 .text {
@@ -22,5 +50,6 @@
 }
 
 .description {
+    font-weight: bold;
     margin-right: 15px;
 }

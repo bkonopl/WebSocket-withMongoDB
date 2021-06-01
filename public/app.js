@@ -25,6 +25,14 @@ let nickname
 function start() {
     ws = new WebSocket('ws://192.168.0.104:3000')
 }
+
+ws.onopen = () => setStatus('ONLINE')
+
+ws.onclose = () => setStatus('disc')
+
+ws.onmessage = response => {
+    printMessage(JSON.parse(response.data))
+}
 function setStatus(value) {
     status.innerHTML = value;
 }
@@ -48,11 +56,3 @@ form.addEventListener('submit', event => {
     ws.send(JSON.stringify(obj))
     input.value = ''
 })
-
-ws.onopen = () => setStatus('ONLINE')
-
-ws.onclose = () => setStatus('disc')
-
-ws.onmessage = response => {
-    printMessage(JSON.parse(response.data))
-}
