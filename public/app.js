@@ -23,7 +23,7 @@ let nickname
 //
 // }
 function start() {
-    ws = new WebSocket('ws://192.168.0.104:3000')
+    ws = new WebSocket('ws://192.168.43.159:3000')
 }
 
 ws.onopen = () => setStatus('ONLINE')
